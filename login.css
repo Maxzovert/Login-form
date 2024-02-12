@@ -38,12 +38,13 @@ form .txt_feild{
   width: 100%;
   padding: 0 5px;
   height: 40px;
-  font-size: 16px;
+  font-size: 20px;
   border: 2px solid black;
   border-radius: 50px;
-  color: pink;
-  font-family: 'Anton', sans-serif;
-  background: linear-gradient(180deg,rgb(255, 255, 126),rgb(255, 147, 223));
+  color: rgb(225, 45, 45);
+  font-family: system-ui, Roboto,sans-serif;
+  font-weight: bold;
+  background: linear-gradient(180deg,rgb(205, 205, 92),rgb(255, 189, 235));
 }
 .txt_feild label{
   position: absolute;
@@ -53,16 +54,6 @@ form .txt_feild{
   transform: translateY(-50%);
   font-size: 32px;
   pointer-events: none;
-}
-.txt_feild span::before{
- content: '';
- position: absolute;
- top: 45px;
-  left: 0;
-  width: 0px;
-  height: 8px;
-  background: red;
-  transition: .5s;
 }
 .txt_feild input:focus ~ span::before,
 .txt_field input:Valid ~ span::before{
@@ -93,7 +84,7 @@ input[type="Submit"]{
   cursor: pointer;
   font-family: 'honk' , system-ui;
   background:linear-gradient(180deg,rgb(255, 147, 223),rgb(255, 255, 126));
-
+  
 }
 
 input[type="Submit"]:hover{
@@ -114,8 +105,9 @@ input[type="Submit"]:hover{
 .signup_link{
   margin: 30px 0;
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
   color: #666666;
+  font-family: 'honk' , system-ui;
 }
 
 .signup_link a{
@@ -124,7 +116,10 @@ input[type="Submit"]:hover{
 }
 
 .signup_link a:hover{
-  text-decoration: underline;
+    border-radius: 25px;
+    text-shadow: 0px 5px 25px red;
+    transition: 0.1s;
+    font-size: 32px;
 }
 
 .HomeAbout{
